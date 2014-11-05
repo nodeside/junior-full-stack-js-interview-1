@@ -1,0 +1,23 @@
+{
+  "name": "junior-full-stack-js-interview-1",
+  "version": "0.0.1",
+  "description": "Basic Interview Questions For Junior Full Stack JS Developers",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/nodeside/junior-full-stack-js-interview-1.git"
+  },
+  "author": "Yonatan Ellman <yonatan@nodeside.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/nodeside/junior-full-stack-js-interview-1/issues"
+  },
+  "homepage": "https://github.com/nodeside/junior-full-stack-js-interview-1",
+  "dependencies": {
+    "express": "^4.10.1",
+    "mongoose": "^3.8.18"
+  }
+}
