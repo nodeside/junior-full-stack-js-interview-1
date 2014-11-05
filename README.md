@@ -59,10 +59,10 @@ PART 1 - Server
  6. Edit the config file in`config/interview.js`and replace the default mongdb connection string with this remote read-only database `mongodb://public-r:itspublic@ds051110.mongolab.com:51110/junior-fullstack-js-1` 
  7. Commit this change with a meaningful message
  8. Run `npm install`
- 8. Run the nodejs application with the environment variable `interview`as we edited the interview config
+ 8. Run the nodejs application with the environment variable `interview`as we edited the interview config. To run it with default environment variable of development you do `node bin/www`
  9. In your browser go to `http://127.0.0.1:3000/articles` You should see a list of articles in JSON format
- 10. Open the `app.js` and change the database query to only accept *published* articles. Each article has a boolean field called *published*. By default it is false and changed to true once it has been published.
- 11. Use the setLimit() function to limit the number of results 50. The setLimit() function has a bug and does not return the correct value. Fix the function to ensure it returns the correct value. for example `setLimit(50)` MUST return 50.
+ 10. Change the database query to only accept *published* articles. Each article has a boolean field called *published*. By default it is false and changed to true once it has been published.
+ 11. Make a setLimit() function to limit the number of results 10. The setLimit() function must check for non negative values less than 500 that are numerical.
  12. Order the results by the *updated* field with the most recent item being at the top of the list
 
 

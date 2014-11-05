@@ -9,12 +9,18 @@ var Articles = mongoose.model('Article');
 /* GET home page. */
 router.get('/articles', function(req, res) {
 
-	Articles.find().limit(10).exec(function(err,docs) {
 
-		console.log(docs);
-		res.render('index', { title: 'Swig Template Title', docs:docs });
+	Articles.find().limit(1000).exec(function(err, docs) {
+		res.render('index', {
+			title: 'Swig Template Title',
+			docs: docs
+		});
 	});
-  
+
 });
+
+function setLimit(limit) {
+	return limit;
+}
 
 module.exports = router;
