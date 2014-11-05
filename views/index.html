@@ -1,0 +1,15 @@
+{% extends 'layout.html' %}
+
+{% block title %}{{title}}{% endblock %}
+
+{% block head %}
+  {% parent %}
+{% endblock %}
+
+{% block content %}
+
+{% for doc in docs -%}
+	{{ doc | raw }}
+	<br>
+{%- endfor %}
+{% endblock %}
