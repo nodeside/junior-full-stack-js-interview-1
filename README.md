@@ -62,7 +62,7 @@ PART 1 - Server
  8. Run the nodejs application with the environment variable `interview`as we edited the interview config. To run it with default environment variable of development you do `node bin/www`
  9. In your browser go to `http://127.0.0.1:3000/articles` You should see a list of articles in JSON format
  10. Change the database query to only accept *published* articles. Each article has a boolean field called *published*. By default it is false and changed to true once it has been published.
- 11. Use the setLimit() function to limit the number of results 50. The setLimit() function has a bug and does not return the correct value. Fix the function to ensure it returns the correct value. for example `setLimit(50)` MUST return 50.
+ 11. Use the setLimit() function to limit the number of results 10. The setLimit() function has a bug and does not return the correct value. Fix the function to ensure it returns the correct value. for example `setLimit(10)` MUST return 10.
  12. Order the results by the *updated* field with the most recent item being at the top of the list
 
 
