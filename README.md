@@ -64,6 +64,9 @@ PART 1 - Server
  10. Change the database query to only accept *published* articles. Each article has a boolean field called *published*. By default it is false and changed to true once it has been published.
  11. Make a setLimit() function to limit the number of results 10. The setLimit() function must check for non negative values less than 500 that are numerical.
  12. Order the results by the *updated* field with the most recent item being at the top of the list
+ 13. Create your own repo on github and setup a remote to that new repo see `git remote add --help`
+ 14. Push your branch to your own repo
+ 15. Make a pull request of the original project to the *junior-full-stack-js-1* branch
 
 
 PART2 - Client
