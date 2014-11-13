@@ -57,6 +57,7 @@ PART 1 - Server
  4. Git add the new file to your project
  5. Commit the change with a meaningful message. (don't forget to ensure you git config is setup)
  6. Edit the config file in`config/interview.js`and replace the default mongdb connection string with this remote read-only database `mongodb://public-r:itspublic@ds051110.mongolab.com:51110/junior-fullstack-js-1` 
+ 7. The package.json is missing the mongoose dependency. Add it
  7. Commit this change with a meaningful message
  8. Run `npm install`
  8. Run the nodejs application with the environment variable `interview`as we edited the interview config. To run it with default environment variable of development you do `node bin/www`
